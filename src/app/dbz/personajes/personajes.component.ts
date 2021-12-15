@@ -8,6 +8,6 @@ import { Personaje } from '../interfaces/dbz.interface';
 })
 export class PersonajesComponent  {
 
-  @Input('nombreEnInput') personajes: Personaje[] = [];
+  @Input('personajes') personajes: Personaje[] = [];
 
 }
