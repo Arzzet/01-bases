@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { ContadorModule } from './contador/contador.module';
-import { ContadorComponent } from './contador/contador/contador.component';
+import { DbzModule } from './dbz/dbz.module';
 import { FridensModule } from './fridens/fridens.module';
 
 
@@ -15,7 +15,8 @@ import { FridensModule } from './fridens/fridens.module';
   imports: [
     BrowserModule,
     FridensModule,
-    ContadorModule
+    ContadorModule,
+    DbzModule    
   ],
   providers: [],
   bootstrap: [AppComponent]
