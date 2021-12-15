@@ -1,0 +1,21 @@
+<p>Listado de fridens</p>
+
+
+<div *ngIf="fridenBorrado; else noBorrado">
+    <h3>Friden Borrado: <small>{{fridenBorrado}}</small></h3>
+</div>
+
+<ng-template #noBorrado>
+    <h3>No se ha borrado nada</h3>
+</ng-template>
+
+
+<button (click)="borrarFriden()">
+    Borrar
+</button>
+
+<ul>
+    <li *ngFor="let friden of fridens; let i = index">
+        {{i+1}}-{{friden}}
+    </li>
+</ul>
